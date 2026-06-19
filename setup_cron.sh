@@ -72,9 +72,8 @@ EOF
 
 chmod +x "$CRON_WRAPPER"
 
-# Create cron job (5 AM AST = 9 AM UTC during standard time, 8 AM UTC during daylight time)
-# Using 8 AM UTC to cover both cases
-CRON_CMD="0 8 * * * $CRON_WRAPPER"
+# Create cron job (5 AM AST = 9 AM UTC)
+CRON_CMD="0 9 * * * $CRON_WRAPPER"
 
 # Check if cron job already exists
 if crontab -l 2>/dev/null | grep -q "$CRON_WRAPPER"; then

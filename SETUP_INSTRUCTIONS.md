@@ -44,7 +44,7 @@ tail -f news_digest.log
 
 ## Schedule
 
-- **Time**: 5 AM AST (8 AM UTC)
+- **Time**: 5 AM AST (9 AM UTC)
 - **Frequency**: Every day
 - **Recipient**: soshinycf@gmail.com
 - **Headlines**: Top 10 world news stories from previous day
